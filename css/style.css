@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400&family=Montserrat:wght@400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #7b51cd;
+    text-align: center;
+    padding: 20px;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
+    text-align: left;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero {
+    max-width: 600px;
+    text-align: left;
+    
+}
+
+.title{
+    font-weight: bolder;
+
+}
+
+.principal-subtitle {
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.principal-text {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px 35px;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: #00ca91; /* Fundo do botão */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    left: 5px; /* Posiciona o círculo à esquerda do texto */
+    width: 30px;
+    height: 30px;
+    background-color: #87cfd3; /* Cor do círculo, um pouco mais clara que o fundo do botão */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.button:hover::before {
+    transform: translateX(670%); /* Move o círculo para a direita ao passar o mouse */
+}
+
+.button {
+    position: relative;
+    z-index: 1;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.image{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
